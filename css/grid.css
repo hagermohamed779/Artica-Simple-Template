@@ -1,0 +1,135 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Open Sans" , sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding: 15px 40px;
+    margin: auto;
+    background-color: #eee;
+}
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: 1fr 1fr 1fr 0.75fr;
+    grid-gap: 5px;
+    grid-template-areas: "osama osama ahmed sandy" 
+    "ibrahim mhmod mhmod sandy" 
+    "ibrahim ezz ezz sandy" "sayed ibo gmal emo";
+}
+.gr-1{
+    grid-area: osama;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+}
+
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 15px;
+    color: #aaa;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+p{
+    font-size: 15px;
+    font-weight: normal;
+}
+.gr-2{
+    grid-area: ahmed;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-3{
+    grid-area: sandy;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-4{
+    grid-area: ibrahim;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-5{
+    grid-area: mhmod;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-6{
+    grid-area: ezz;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-7{
+    grid-area: sayed;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-8{
+    grid-area: ibo;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-9{
+    grid-area: gmal;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+.gr-10{
+    grid-area: emo;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    padding: 10px 10px 10px 15px;
+}
+h4{
+    font-size: 40px;
+    color: #aaa;
+    transform: translate(95% , 40%);
+    
+}
+.gr-3 h4 {
+    transform: translate(95% , 350px);
+}
+.gr-4 h4{
+    transform: translate(95% , 190px);
+}
